@@ -1,0 +1,407 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mona Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav .menubar {
+    display: none;
+}
+
+.product>div a>p>span:hover , .solution>div a>p>span:hover{
+    color: #79C0FF;
+}
+
+nav .menubar{
+    display: none;
+}
+
+/* .menu-container{
+        width: 400px;
+    }  */
+
+nav {
+    padding: 1% 2% 0% 2%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #000000;
+    /* backdrop-filter: blur(10px); */
+    z-index: 1;
+}
+
+nav>a>i {
+    margin-top: 10px;
+    font-size: 1.7em;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+    margin-left: 1em;
+
+}
+
+nav>div>ul>li {
+    padding: 0.5em 0 1em 0;
+}
+
+.login {
+    align-items: end;
+    justify-content: end;
+}
+
+nav>.login input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+
+nav>.login input::placeholder {
+    color: white;
+}
+
+
+ul {
+    margin-left: 10px;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+ul li:hover i {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+ul li:hover,
+li>a:hover {
+    cursor: pointer;
+    color: #79C0FF;
+    transition: 0.5s;
+}
+
+ul li:hover .product,
+ul li:hover .solution {
+    display: flex;
+
+}
+
+
+ul li:hover .product,
+ul li:hover .solution {
+    display: flex;
+
+}
+
+.product {
+    width: 450px;
+    /* height: 325px; */
+    position: absolute;
+    display: none;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    padding: 1% 2% 1% 1%;
+    gap: 0.5em;
+    border-radius: 10px;
+    top: 70px;
+}
+
+.solution {
+    width: 400px;
+    /* height: 325px; */
+    position: absolute;
+    display: none;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    padding: 1% 2% 1% 1%;
+    gap: 0.5em;
+    border-radius: 10px;
+    top: 70px;
+}
+
+.product>div,
+.solution>div {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.product>div>div>h3,
+.product>div>h3,
+.solution>div>h3 {
+    font-size: 1em;
+    color: black;
+    margin: 0;
+}
+
+.product p,
+.solution p {
+    font-size: 1em;
+    color: black;
+}
+
+
+/* .........  footer ................ */
+
+
+
+footer {
+    width: 100%;
+    background-color: #0B0F1C;
+    padding-bottom: 40px;
+}
+
+footer * {
+    margin-top: 0.7em;
+}
+
+footer>div {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+
+footer>div>div:first-child {
+    width: 30%;
+}
+
+footer>div>div {
+    padding: 2%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 15%;
+}
+
+
+footer button {
+    padding: 3%;
+    margin-top: 1.3em;
+    font-size: 1.1em;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+footer ul {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+@media screen and (max-width:1440px) {
+    .menubar{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .menubar{
+        display: none;
+    }
+    html{
+        font-size: 12px;
+    }
+
+    nav>a>i{
+        margin-top: 12px;
+    }
+
+    .signin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    nav>.login input{
+        width: 100%;
+    }
+    .solution{
+        width: 325px;
+
+    }
+    ul{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 11px;
+    }
+
+    ul{
+        width: 60%;
+    }
+
+
+    footer>div{
+        width: 90%;
+    }
+
+    footer>div>div:first-child {
+        width: 90%;
+        font-size: 1.3em;
+    }
+
+    footer>div>div {
+        width: 23%;
+    }
+
+    footer ul {
+        font-size: 1.3em;
+    }
+
+
+    .login{
+        justify-content: start;
+    }
+
+    ul>li .product{
+        width: 350px;
+    }
+
+    nav>.login input{
+        width: 70%;
+    }
+    
+    .menubar{
+        display: none;
+    }
+    /* nav{
+        align-items: center;
+        justify-content: space-between;
+    } */
+
+    /* nav>div ul {
+        width: 70%;
+    }
+
+    .menu,.signin{
+        display: none;
+    }
+
+    .menubar, nav>a>i{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .login{
+        width: 50%;
+        align-items: end;
+        justify-content: end;
+    }
+
+    .login ul{
+        justify-content: end;
+    } */
+}
+
+@media screen and (max-width:425px) {
+
+    nav{
+        padding: 10px;
+    }
+
+    .solution{
+        width: 250px;
+    }
+
+    .product{
+        width: 250px;
+    }
+
+    footer>div>div{
+        width: 50%;
+    }
+
+    nav{
+        width: 425px;
+    }
+
+    ul{
+        width: 90%;
+    }
+
+    .menu , .login{
+        display: none;
+    }
+
+    nav .menubar{
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 2em;
+    }
+
+    nav .menubar:hover div{
+        display: flex;
+    }
+
+    nav .menubar>div{
+        border-radius: 10px;
+        width: 240px;
+        background-color: white;
+        color: #000000;
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav .menubar i{
+        color: #000000;
+    }
+    nav .menubar>div>details>summary,.menubar>div>a{
+        font-size: 0.8em;
+        font-weight: 700;
+        color: black;
+    }
+
+    nav .menubar>div>details>a{
+        margin-top: 10px;
+        display: block;
+        font-size: 0.5em;
+        font-weight: 500;
+    }
+
+    nav .menubar button, .menubar input{
+
+        padding: 5px 0 5px 0;
+    }
+    nav .menubar button>a{
+        color: #000000;
+    }
+}

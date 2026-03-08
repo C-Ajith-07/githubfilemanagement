@@ -1,0 +1,463 @@
+
+body {
+    width: 100vw;
+    text-decoration: none;
+    background-color: #000000;
+    overflow-x: hidden;
+    /* cursor: url('images/icons8-cursor-64.png'), auto; */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+    background-image: linear-gradient(245deg, #122E19, #020402);
+}
+
+
+
+header>div {
+    width: 65%;
+    text-align: center;
+}
+
+header>div * {
+    margin-top: 10px;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+header>div:first-child {
+    padding: 3% 8% 2% 8%;
+    animation: head linear;
+    animation-duration: 3s;
+}
+
+@keyframes head{
+    from{
+        opacity: 0.4;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 1;   
+    }
+}
+
+span {
+    color: #9198A1;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+header>div>button {
+    padding: 1.5% 3% 1.5% 3%;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 700;
+    border: 1px solid #8B949E;
+}
+
+header button:first-of-type {
+    color: black;
+    background-color: white;
+}
+
+header button:first-of-type>a{
+    color: #000000;
+}
+
+header button:last-of-type {
+    margin-left: 1.2em;
+    color: white;
+    background-color: transparent;
+}
+
+iframe {
+    width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+/* ....................................          .................................... */
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020402;
+
+}
+
+section .powerContainer {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+
+.powerContainer div {
+    width: 50%;
+    padding: 3%;
+}
+
+.powerContainer h1 {
+    font-size: 1.8em;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+/* ....................................     marquee animation    ........................................ */
+
+.marquee {
+    width: 65%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5em;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+    border-bottom: 2px solid rgb(85, 85, 85);
+    outline: white;
+    padding-bottom: 1%;
+    margin-bottom: 3em;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+
+.item {
+    width: 200px;
+    height: 100px;
+    /* background-color: red; */
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 12), 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.item1 {
+    animation-delay: calc(30s / 12 * (12 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 12 * (12 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 12 * (12 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 12 * (12 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 12 * (12 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 12 * (12 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 12 * (12 - 7) * -1);
+}
+
+.item8 {
+    animation-delay: calc(30s / 12 * (12 - 8) * -1);
+}
+
+.item9 {
+    animation-delay: calc(30s / 12 * (12 - 9) * -1);
+}
+
+.item10 {
+    animation-delay: calc(30s / 12 * (12 - 10) * -1);
+}
+
+.item11 {
+    animation-delay: calc(30s / 12 * (12 - 11) * -1);
+}
+
+.item12 {
+    animation-delay: calc(30s / 12 * (12 - 12) * -1);
+}
+
+.item>img {
+    height: 50%;
+    width: 100%;
+}
+
+
+.container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 20% 2% 20%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size: 2.7em;
+}
+
+.container p {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.container h4 {
+    color: #79C0FF;
+    margin-top: 2em;
+
+}
+
+main>div:nth-of-type(2) {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020402;
+    flex-direction: column;
+    border-top: 1px solid rgb(56, 56, 56);
+    padding-bottom: 5em;
+}
+
+
+.aboutours,
+.rating {
+    flex-wrap: wrap;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4%;
+}
+
+
+.aboutours>div {
+    width: 31%;
+    padding: 2%;
+    background-color: #161B22;
+    border-radius: 1.5em;
+    transition: 2s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0;
+        transform: translatey(300px);
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translatey(0px);
+    }
+}
+
+.aboutours>div:hover {
+    transform: scale(1.07);
+    transition: 2s;
+    cursor: pointer;
+}
+
+
+.aboutours h1 {
+    font-size: 1.2em;
+}
+
+.aboutours h4 {
+    margin-top: 2em;
+}
+
+.aboutours h5 {
+    margin-top: 4em;
+    color: #79C0FF;
+}
+
+
+.rating>div {
+    width: 25%;
+    padding-left: 4%;
+}
+
+.rating h1 {
+    font-size: 3.6em;
+}
+
+body main:nth-of-type(2) {
+    background-color: #161B22;
+}
+
+.position {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/Testimonial__6_.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3em;
+    background-position: center;
+}
+
+.position>div {
+    width: 70%;
+    padding: 6%;
+    /* background-color: #101010; */
+    border: 2px solid white;
+    backdrop-filter: blur(50px);
+    border-radius: 2.3em;
+
+}
+
+.position h1 {
+    font-size: 2.7em;
+    margin-top: 2em;
+}   
+
+.menubar{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    html{
+        font-size: 13px;
+    }
+
+   nav>div ul{
+        width: 50%;
+    }
+
+    header>div,section .powerContainer , .container,main>div:nth-of-type(2)  , .rating{
+        width: 80%;
+    }
+
+    header>div:first-child{
+        padding:3% 0 3% 0;
+    }
+
+    .container{
+        padding: 5% 10% 2% 10%;
+    }
+
+    .position>div{
+        width: 90%;
+    }
+
+    footer>div{
+        width: 90%;
+    }
+
+    ul li .product {
+        width: 400px;
+    }
+
+    ul li .solution{
+        width: 375px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+
+    nav>div ul{
+        width: 60%;
+    }
+    ul>li .product{
+        width: 350px;
+    }
+
+    .solution{
+        width: 300px;
+    }
+
+    header>div , section .powerContainer,.container , .aboutours, .rating, .powerContainer div{
+        width: 90%;
+        gap: 20px;
+    }
+
+    .aboutours>div ,.rating div{
+        width: 48%;
+        
+    }
+
+    footer>div>div:first-child{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    html{
+        font-size: 10px;
+    }
+
+    nav>div ul{
+        width: 85%;
+    }
+
+
+    .login>ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header h1{
+        font-size: 3em;
+    }
+
+    .aboutours>div,.rating>div{
+        width: 100%;
+    }
+    footer>div>div{
+        width: 50%;
+    }
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <style>
+        button,
+        i {
+            cursor: pointer;
+        }
+
+        * {
+            color: white;
+            margin: 0;
+            font-family: "Mona Sans", sans-serif;
+        }
+
+        body {
+            margin-left: 10px;
+        }
+
+        button,
+        input {
+            color: black;
+        }
+
+        li {
+            border: 2px solid black;
+        }
+
+        .title {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #3d444d;
+            height: 35px;
+        }
+
+        .repositorys {
+            height: 90vh;
+            border-right: 1px solid #3d444d;
+            border-left: 1px solid #3d444d;
+            width: 15%;
+            padding: 10px;
+            background-color: #0D1117;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .showFileContent {
+            scrollbar-width: none;
+            padding: 10px;
+        }
+
+        .showFiles {
+            height: 90vh;
+            width: 85%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .newCreate{
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #create{
+            background-color: rgb(6, 121, 6);
+            padding: 10px;
+            width: 150px;
+            border: none;
+            /* border: 2px solid white; */
+            border-radius: 2px;
+            font-size: 20px;
+            color: white;
+        }
+
+
+        .repositorys>button {
+            width: 100%;
+            background-color: transparent;
+            color: white;
+            padding: 5px 3px 5px 10px;
+            font-size: 1em;
+            border: 1px solid #3d444d;
+            transition: 0.5s;
+            text-align: start;
+            border-radius: 2px;
+        }
+
+        .repositorys>button:hover {
+            transition: 0.5s;
+            border-radius: 10px;
+            background-color: #181f2b;
+        }
+
+        .projectContainer {
+            height: 90%;
+            display: flex;
+        }
+
+        /* #create-file{
+            display: flex;
+        } */
+
+        #create-file>input {
+            border: 1px solid white;
+            background-color: transparent;
+        }
+
+        .repositoriesProject {
+            height: 90%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+
+        .repositoriesProject>div:first-child {
+            height: 50%;
+            width: 49%;
+            border: 1px solid #3d444d;
+        }
+
+        .repositoriesProject>div:last-child {
+            height: 100%;
+            width: 49%;
+            border: 1px solid #3d444d;
+        }
+
+        .repositoriesProject>div>button,
+        .repositoriesProject>div>input {
+            position: relative;
+            left: 76.5%;
+        }
+
+        .repositoriesProject>div>button {
+            color: white;
+            background-color: green;
+        }
+
+        table {
+            width: 99%;
+        }
+
+        tr {
+            /* width: 100%; */
+            padding: 10px;
+            border: 2px solid white;
+        }
+
+        th {
+            background-color: #151B23;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #3d444d;
+        }
+
+        td {
+
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #3d444d;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        td:hover {
+            background-color: #151B23;
+            transition: 0.5s;
+        }
+
+        .userLogin {
+            height: 125px;
+            width: 150px;
+            border-radius: 20px;
+            border: 2px solid #3d444d;
+            right: 25px;
+            background-color: #010409;
+            position: absolute;
+            display: none;
+            padding: 20px;
+            box-sizing: border-box;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .userLogin>button {
+            background-color: transparent;
+            border: none;
+            font-size: 1em;
+            align-items: start;
+            padding: 0;
+            color: white;
+            margin: 0;
+        }
+        #userData{
+            border: 2px solid white;
+            border-radius: 50%;
+            padding: 8px;
+        }
+    </style>
+    <script type="module" src="fileMangament.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/b903ca11fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body bgcolor="#010409">
+    <div class="title">
+        <h3>GitHub repositories</h3>
+        <h3><i id="userData" class="fa-solid fa-user">
+                <div id="userLogin" class="userLogin">
+                    <p id="userLoginName"></p>
+                    <button id="userLogOut"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+                </div>
+            </i></h3>
+    </div>
+    <div class="projectContainer">
+        <div class="repositorys">
+            <p>Your Repositories</p>
+        </div>
+        <div class="showFiles">
+            <div class="newCreate">
+                <h1>If you want to create the new repositories create here</h1>
+                <button id="create">+ New</button>
+                <form id="create-file" style="display: none;">
+                    <!-- <input type="file" required> -->
+                    <input type="input" id="file" required>
+                    <button type="submit">create</button>
+                </form>
+            </div>
+            <div class="repositoriesProject" style="display: none;">
+                <div>
+                    <!-- <button>Add files</button> -->
+                    <input type="file" placeholder="upload file">
+                    <table>
+                        <tr>
+                            <th class="repoTitle">Repositories name</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="showFileContent"></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <input  type="file" id="upload">
+    <button id="submit">view</button>
+    <img id="dynamic"> -->
+
+    <!-- <div class="container">
+
+        <h1>Upload a File</h1>
+        
+        <form id="upload-form">
+            <input type="file" id="file-input" required>
+            <button type="submit">Upload File</button>
+        </form>
+
+        <hr>
+
+        <h1>Your Images</h1>
+        <div id="gallery">
+            </div>
+            <button id="view">view</button>
+            <button id="viewFile">viewFile</button>
+
+            <button id="project">project</button>
+            <button id="create">create</button>
+            <form id="create-file" style="display: none;">
+                <input type="input" id="file" required>
+                <button type="submit">Upload File</button>
+            </form>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</body>
+
+</html>

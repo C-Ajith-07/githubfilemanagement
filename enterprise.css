@@ -1,0 +1,403 @@
+
+body {
+    width: 100vw;
+    text-decoration: none;
+    background-color: #000000;
+    overflow-x: hidden;
+    /* cursor: url('images/icons8-cursor-64.png'), auto; */
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+header>div {
+    width: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>div>video {
+    width: 100%;
+}
+
+
+header>div>div {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    animation-name: smooth1;
+    animation-duration: 3s;
+}
+
+header>div>div>h1 {
+    font-size: 4.5em;
+    padding: 0 20%;
+
+}
+
+header>div>div>h2 {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+@keyframes smooth1{
+    from{
+        opacity: 0.4;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+span {
+    color: #8B949E;
+}
+
+
+.marquee {
+    width: 65%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5em;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+    border-bottom: 2px solid rgb(85, 85, 85);
+    outline: white;
+    padding-bottom: 1%;
+    margin-bottom: 3em;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+
+.item {
+    width: 200px;
+    height: 100px;
+    /* background-color: red; */
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 12), 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+
+.item1 {
+    animation-delay: calc(30s / 12 * (12 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 12 * (12 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 12 * (12 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 12 * (12 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 12 * (12 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 12 * (12 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 12 * (12 - 7) * -1);
+}
+
+.item8 {
+    animation-delay: calc(30s / 12 * (12 - 8) * -1);
+}
+
+.item9 {
+    animation-delay: calc(30s / 12 * (12 - 9) * -1);
+}
+
+.item10 {
+    animation-delay: calc(30s / 12 * (12 - 10) * -1);
+}
+
+.item11 {
+    animation-delay: calc(30s / 12 * (12 - 11) * -1);
+}
+
+.item12 {
+    animation-delay: calc(30s / 12 * (12 - 12) * -1);
+}
+
+.item>img {
+    height: 50%;
+    width: 100%;
+}
+
+.enterprise {
+    margin: auto;
+    width: 65%;
+}
+
+.enterprise>h1 {
+    font-size: 4em;
+}
+
+.container {
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.container>div {
+    width: 54%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+}
+
+
+
+
+@keyframes appear-2 {
+    from {
+        opacity: 0;
+        translate: -200px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0;
+    }
+}
+
+@keyframes appear-3 {
+    from {
+        opacity: 0;
+        translate: 200px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0;
+    }
+}
+
+
+/* ............... position ..................... */
+
+
+.position {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3em;
+    background-position: center;
+    position: relative;
+}
+
+
+.position>div {
+    width: 65%;
+    padding: 6%;
+    /* background-color: #101010; */
+    backdrop-filter: blur(50px);
+    border-radius: 2.3em;
+
+}
+
+.position>img{
+    width: 30%;
+    position: absolute;
+    z-index: -1;
+    animation: rotate both;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+}
+
+.position>img:first-of-type{
+    top: 0;
+    right: 0;
+}
+
+.position>img:last-of-type{
+    bottom: -5%;
+    left: 0;
+}
+
+.position h1 {
+    font-size: 2.7em;
+    margin-top: 2em;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ......................   container  ................ */
+.container>div>p {
+    font-size: 2em;
+}
+
+.container>div>img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.container>div:first-child {
+    padding: 2% 15% 2% 2%;
+    width: 46%;
+    animation: appear-2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.container>div:last-child{
+    animation: appear-3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+h3 {
+    margin: 1em 0 1em 0;
+    color: #79C0FF;
+}
+.menubar{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    html{
+        font-size: 12px;
+    }
+
+    nav>a>i{
+        margin-top: 12px;
+    }
+
+    .signin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    nav>.login input{
+        width: 100%;
+    }
+    .solution{
+        width: 325px;
+
+    }
+
+    ul{
+        width: 79%;
+    }
+
+    header>div{
+        width: 80%;
+    }
+
+    .enterprise{
+        width: 80%;
+    }
+
+    footer>div{
+        width: 80%;
+    }
+
+    .log{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .login{
+        align-items: center;
+        justify-content: center;
+    }
+
+    html{
+        font-size: 10px;
+    }
+
+    .marquee{
+        display: none;
+    }
+
+    header>div{
+        width: 100%;
+    }
+
+    header>div>div>h1{
+        font-size: 2em;
+    }
+
+    .enterprise{
+        width: 95%;
+    }
+
+    .enterprise>h1{
+        font-size: 2em;
+    }
+
+    .container>div{
+        
+        width: 100%;
+    }
+
+    .container>div:first-child  ,.container>div:last-child        {
+        animation: none;
+        width: 100%;
+    }
+
+    .position>div{
+        width: 95%;
+    }
+
+    .position h1{
+        font-size: 2em;
+    }
+}

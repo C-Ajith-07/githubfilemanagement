@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <!-- <script src="https://kit.fontawesome.com/b903ca11fe.js" crossorigin="anonymous"></script> -->
+    <script src="fileMangament.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+        <div class="container">
+            <div class="bgimage">
+                <div>
+                    <h1>Create your free account</h1>
+                    <p>Explore GitHub's core features for individuals and organizations.</p>
+                    <div>
+                        <p>Access to GitHub Copilot</p>
+                        <p>Increase your productivity and accelerate software development.</p>
+                    </div>
+                    <div>
+                        <p>Unlimited repositories</p>
+                        <p>Collaborate securely on public and private projects.</p>
+                    </div>
+                    <div>
+                        <p>Integrated code reviews</p>
+                        <p>Boost code quality with built-in review tools.</p>
+                    </div>
+                    <div>
+                        <p>Automated workflows</p>
+                        <p>Save time with CI/CD integrations and GitHub Actions.</p>
+                    </div>
+                    <div>
+                        <p>Community support</p>
+                        <p>Connect with developers worldwide for instant feedback and insights.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="white">
+                <div>
+                    <h2>Sign up for GitHub</h2>
+                    <form id="signup" onsubmit="signup(event)">
+                        <div>
+                            <p>Email<label>*</label></p>
+                            <input type="email" placeholder="-----.gmail.com" required id="signupEmail">
+                        </div>
+                        <div>
+                            <p>Password<label for="">*</label></p>
+                            <input type="password" placeholder="user@230" id="signupPassword" required>
+                            <span>Password should be at least 15 characters OR at least 8 characters including a number and a lowercase letter</span>
+    
+                        </div>
+                        <div>
+                            <p>Username<label for="">*</label></p>
+                            <input type="text" placeholder="Username" id="signupName" required>
+                            <span>Username may only contain alphanumeric characters or single <br> hyphens, and cannot begin or end with a hyphen.</span>
+
+                        </div>
+                        <div>
+                            <p>Your Country/Region</p>
+                            <input type="text" id="country" name="country" list="country-options">
+    
+                            <datalist id="country-options">
+                                <option value="United States">
+                                <option value="Canada">
+                                <option value="Mexico">
+                                <option value="United Kingdom">
+                                <option value="France">
+                                <option value="Germany">
+                                <option value="India">
+                                <option value="Australia">
+                            </datalist>
+                            <span>For compliance reasons, we're required to collect country information <br> to send you occasional updates and announcements.                        </span>
+                        </div>
+                        <div>
+                            <p>Email preferences</p>
+                            <div>
+                                <input type="checkbox" id="vehicle">
+                                <span for="vehicle">Receive occasional product updates and announcements</span>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit">Create account</button>
+                            <span>By creating an account, you agree to the Terms of Service. For more information about GitHub's privacy practices, see the GitHub Privacy Statement. We'll occasionally send you account-related emails.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+
+</html>

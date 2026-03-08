@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git-HuB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="lcon" href="images/githubpng.png">
+    <link rel="stylesheet" href="homePage.css">
+    <script src="https://kit.fontawesome.com/b903ca11fe.js" crossorigin="anonymous"></script>
+    <script src="srcipt.js" defer></script>
+</head>
+
+<body>
+    <nav>
+
+        <i class="fa-solid fa-bars menubar">
+            <div>
+                <a href="homePage.html"><i class="fa-brands fa-github"></i></a>
+
+                <details>
+                    <summary>Product</summary>
+                    <a href="whygit-hub.html"><span>whyGit-hub</span></a>
+                    <a href="allFeatures.html"><span>All Features</span></a>
+                </details>
+                <hr>
+                <details>
+                    <summary>
+                        solutions
+                    </summary>
+                    <a href="enterprise.html"><span>Enterprise</span></a>
+                    <a href="team.html"><span>Team</span></a>
+                    <a href="startup.html"><span>Startup</span></a>
+                    <a href="solution.html"><span>View All Features</span></a>
+                </details>
+                <hr>
+                <a href="pricing.html">Pricing</a>
+                <hr>
+                <input list="input2" id="searchBox1" placeholder="search">
+
+                <datalist id="input2">
+                    <option value="homePage">
+                    <option value="allFeatures">
+                    <option value="pricing">
+                    <option value="enterprise">
+                    <option value="team">
+                    <option value="signin">
+                    <option value="signup">
+                    <option value="solution">
+                    <option value="whygit-hub">
+                </datalist>
+
+                <button><a href="signin.html">Signin</a></button>
+            </div>
+        </i>
+        <a class="menu" href="homePage.html"><i class="fa-brands fa-github"></i></a>
+        <div class="menu">
+            <ul>
+                <li>Product <i class="fa-solid fa-angle-down"></i>
+                    <div class="product">
+                        <div>
+                            <div>
+                                <h3>GitHub Copilot</h3>
+                                <p><span>Write better code with AI</span></p>
+                            </div>
+                            <div>
+                                <h3>
+                                    GitHub Spark
+                                </h3>
+                                <p><span>Build and deploy intelligent apps</span></p>
+                            </div>
+                            <div>
+                                <h3>
+                                    GitHub Model
+                                </h3>
+                                <p><span>
+                                        Manage and compare prompts</span></p>
+                            </div>
+                            <div>
+                                <h3>
+                                    GitHub Advanced Security
+                                </h3>
+                                <p><span>
+                                        Find and fix vulnerabilities</span></p>
+                            </div>
+                            <div>
+                                <h3>Actions</h3>
+                                <p><span>
+                                        Automate any workflow</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Explore</h3>
+                            <a href="whygit-hub.html">
+
+                                <p> <span> Why github </span></p>
+                            </a>
+                            <a href="allFeatures.html">
+                                <p> <span> All features </span></p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>Solution <i class="fa-solid fa-angle-down"></i>
+                    <div class="solution">
+                        <div>
+                            <h3>By company size</h3>
+                            <a href="enterprise.html">
+                                <p><span>Enterprises</span></p>
+                            </a>
+                            <a href="team.html">
+                                <p><span>Team</span></p>
+                            </a>
+                            <a href="startup.html">
+                                <p><span>Startups</span></p>
+                            </a>
+                            <a href="solution.html">
+                                <p> <span>view All </span></p>
+                            </a>
+                        </div>
+                        <div>
+                            <h3>By industry</h3>
+                            <p><span>Healthcare</span></p>
+                            <p><span>Financial services</span></p>
+                            <p><span>Manufacturing</span></p>
+                            <p><span>Government</span></p>
+                            <p><span>View all industries</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <ul>
+                <li><input list="input" id="searchBox" placeholder="search">
+
+                    <datalist id="input">
+                        <option value="homePage">
+                        <option value="allFeatures">
+                        <option value="pricing">
+                        <option value="enterprise">
+                        <option value="team">
+                        <option value="signin">
+                        <option value="signup">
+                        <option value="solution">
+                        <option value="whygit-hub">
+                    </datalist>
+                </li>
+                <li class="signin"><a href="signin.html">Sign in</a></li>
+                <!-- <li>Sign up</li> -->
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="headContent">
+            <h1>Build and ship software on a single, collaborative platform</h1>
+            <p>Join the world’s most widely adopted AI-powered developer platform.</p>
+            <div class="inputContainer">
+                <div>
+                    <input type="text" required placeholder="Enter your Email">
+                    <button><a href="signup.html">Sign up for GitHub</a></button>
+                </div>
+                <div>
+                    <div><a href="pricing.html">Try GitHub Copilot</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="videoContainer" id="videoContainer">
+        <video id="video" src="images/code.mp4" loop autoplay muted></video>
+        <img id="image" src="" alt="">
+    </div>
+    <section>
+        <div class="controll">
+            <div class="animation">
+                <p onclick="changeVideo(0)">code</p>
+                <p onclick="changeVideo(1)">plan</p>
+                <p onclick="changeVideo(2)">Collaborate</p>
+                <p onclick="changeVideo(3)">Automate</p>
+                <p onclick="changeVideo(4)">Secure</p>
+            </div>
+            <p class="animation">Code quickly and more securely with GitHub Copilot embedded throughout your workflows.
+            </p>
+        </div>
+        <div class="marquee animation-2">
+            <div class="item item1">
+                <img src="images/logo-duolingo-14477f9e54a6.svg" alt="">
+            </div>
+            <div class="item item2">
+                <img src="images/figma.svg" alt="">
+            </div>
+            <div class="item item3">
+                <img src="images/logo-gartner-aa8c2e452b64.svg" alt="">
+            </div>
+            <div class="item item4">
+                <img src="images/mercado-libre.svg" alt="">
+            </div>
+            <div class="item item5">
+                <img src="images/mercedes-benz.svg" alt="">
+            </div>
+            <div class="item item6">
+                <h1><i class="fa-brands fa-shopify" style="color: #ffffff;"></i>Shopify</h1>
+            </div>
+            <div class="item item7">
+                <h1><i class="fa-brands fa-spotify" style="color: #ffffff;"></i>Spotify</h1>
+            </div>
+            <div class="item item8">
+                <h1>American Airlines</h1>
+            </div>
+            <div class="item item9">
+                <h1>PHILIPS</h1>
+            </div>
+            <div class="item item10">
+                <h1>INFOSYS</h1>
+            </div>
+            <div class="item item11">
+                <h1>vodafone</h1>
+            </div>
+            <div class="item item12">
+                <h1>EY</h1>
+            </div>
+        </div>
+        <div class="performance text-appear">
+            <img class="animation" src="images/DeWatermark.ai_1754329622841.jpeg">
+            <h1 class="animation">Accelerate performance</h1>
+            <p class="animation">With GitHub Copilot embedded throughout the platform, you <br> can simplify your
+                toolchain, automate
+                tasks, and improve <br> the developer experience.
+            </p>
+            <!-- <img src="images/stars.png" alt=""> -->
+            <div class="animation">
+                <video loop autoplay muted src="images/prombt.mp4"></video>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <div>
+                    <h1 class="animation">Work 55% faster. <span>Increase productivity with AI-powered coding
+                            assistance, including code
+                            completion, chat, and more.</span></h1>
+                    <h6 class="animation">Explore GitHub Copilot</h6>
+                </div>
+                <div>
+                    <div class="animation">
+                        <img src="images/logo-duolingo-14477f9e54a6.svg" alt="">
+                        <p>Duolingo boosts developer speed by 25% with GitHub Copilot</p>
+                        <h6>Read customer story</h6>
+                    </div>
+                    <div class="animation">
+                        <img src="images/logo-gartner-aa8c2e452b64.svg" alt="">
+                        <p>2024 Gartner® Magic Quadrant™ for AI Code Assistants</p>
+                        <h6>Read industry report</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div>
+                <div>
+                    <details>
+                        <summary>
+                            Automate any workflow
+                        </summary>
+                        <p>Optimize your process with simple and secured CI/CD.</p>
+                        <h6>Discover GitHub Actions</h6>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>
+                            Get up and running in seconds
+                        </summary>
+                        <p><span>Start building instantly with a comprehensive dev environment in the cloud.</span></p>
+                        <h6>Check out GitHub Codespaces
+
+                        </h6>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>
+                            Build on the go
+                        </summary>
+                        <p><span>Manage projects and chat with GitHub Copilot from anywhere.</span></p>
+                        <h6>Download GitHub Mobile</h6>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>Integrate the tools you love</summary>
+                        <p><span>Sync with 17,000+ integrations and a growing library of Copilot Extensions.</span></p>
+                        <h6>Visit GitHub Marketplace</h6>
+                    </details>
+                </div>
+                <div>
+                    <img src="images/accordion-1-ce487d44c0bf.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="performance">
+            <img src="images/Pasted image.png" alt="" class="animation">
+            <h1 class="animation">Work together, achieve more</h1>
+            <p class="animation">Collaborate with your teams, use management tools that sync <br> with your projects,
+                and code from
+                anywhere—all on a single, <br> integrated platform.
+            </p>
+            <!-- <img src="images/stars.png" alt=""> -->
+            <div class="animation">
+                <img src="images/acco5.webp" alt="" style="width: 90%;">
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <div class="animation">
+                    <h1>Your workflows, your way. <span>Plan effectively with an adaptable spreadsheet that syncs with
+                            your work.</span></h1>
+                    <h6>Jump into GitHub Projects</h6>
+                </div>
+                <div class="animation">
+                    <div>
+                        <h1>It helps us onboard new software engineers and get them productive right away. We have all
+                            our source code, issues, and pull requests in one place... GitHub is a complete platform
+                            that frees us from menial tasks and enables us to do our best work.</h1>
+                        <p>
+                            Application manager at Mercedes-Benz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div>
+                <div>
+                    <details>
+                        <summary>Keep track of your tasks</summary>
+                        <p>Create issues and manage projects with tools that adapt to your code.</p>
+                        <h6>Explore GitHub Issues</h6>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>Share ideas and ask questions</summary>
+                        <p>Create space for open-ended conversations alongside your project.</p>
+                        <h6>
+                            Discover GitHub Discussions</h6>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>Review code changes together</summary>
+                        <p>Create review processes that improve code quality and fit neatly into your workflow.</p>
+                        <h6>Learn about code review </h6>
+                    </details>
+                    <hr>
+                    <details>
+                        <summary>Fund open source projects</summary>
+                        <p>Become an open source partner and support the tools and libraries that power your work.</p>
+                        <h6>Dive into GitHub Sponsors</h6>
+                    </details>
+                </div>
+                <div>
+                    <img src="images/accordion-1-38ad6b6d1b20.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="performance">
+            <img src="images/Pasted image (2).png" alt="" class="animation">
+            <h1 class="animation">From startups to enterprises,<span> GitHub scales <br> with teams of any size in any
+                    industry.</span>
+            </h1>
+            <!-- <img src="images/stars.png" alt=""> -->
+            <div class="animation">
+                <img src="images/acco5.webp" alt="" style="width: 90%;">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <h1>
+                    <i class="fa-brands fa-github"></i> GitHub
+                </h1>
+                <h5>Subscribe to our developer newsletter.</h5>
+                <p><span>Get tips, technical guides, and best practices. Twice a month.</span></p>
+                <button>Subscribe</button>
+            </div>
+            <div>
+                <ul>
+                    <li> <span> Product</span></li>
+                    <li> <span>Features</span> </li>
+                    <li> <span> Enterprise</span></li>
+                    <li> <span>Copilot</span> </li>
+                    <li> <span>AI</span> </li>
+                    <li> <span>Security</span> </li>
+                    <li> <span>Pricing</span> </li>
+                    <li> <span> team</span></li>
+                    <li> <span> Resources</span></li>
+                    <li> <span>Roadmap</span> </li>
+                    <li> <span> Compare Github</span></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li> <span>Platform</span> </li>
+                    <li> <span>Developer API</span> </li>
+                    <li> <span>Partners</span> </li>
+                    <li> <span>Education</span> </li>
+                    <li> <span>GitHub CLI</span> </li>
+                    <li> <span>GitHub Desktop </span> </li>
+                    <li> <span>GitHub Mobile</span> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li> <span>Support</span> </li>
+                    <li> <span>Docs</span> </li>
+                    <li> <span>Community Forum</span> </li>
+                    <li> <span>Professional Services</span> </li>
+                    <li> <span>Premium Support</span> </li>
+                    <li> <span>Skills</span> </li>
+                    <li> <span>Status</span> </li>
+                    <li> <span>Contact GitHub</span> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li> <span>Company</span> </li>
+                    <li> <span>About</span> </li>
+                    <li> <span>Why GitHub</span> </li>
+                    <li> <span>Customer stories</span> </li>
+                    <li> <span>Blog</span> </li>
+                    <li> <span>The ReadME Project</span> </li>
+                    <li> <span>Careers</span> </li>
+                    <li> <span>Newsroom</span> </li>
+                    <li> <span>Inclusion</span> </li>
+                    <li> <span>Social Impact</span> </li>
+                    <li> <span>Shop</span> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script>
+        let videoSource = ["images/code.mp4", "images/element2.png", "images/collaborate-2.png", "element4", "element5"];
+        function changeVideo(index) {
+            if (index != 0) {
+                console.log("yes come")
+                document.getElementById("video").style.display = 'none';
+                document.getElementById("image").style.display = 'block';
+                document.getElementById("image").src = videoSource[index]
+            }
+            else {
+                document.getElementById("image").style.display = 'none';
+                document.getElementById("video").style.display = 'block';
+                document.getElementById("video").src = videoSource[index]
+            }
+        }
+
+
+
+    </script> -->
+</body>
+
+</html>

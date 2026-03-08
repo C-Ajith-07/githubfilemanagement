@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="lcon" href="images/githubpng.png">
+    <script src="https://kit.fontawesome.com/b903ca11fe.js" crossorigin="anonymous"></script>
+    <script src="fileMangament.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div>
+                <a href="homePage.html"><i class="fa-brands fa-github"></i></a>
+                <h2>Sign in to GitHub</h2>
+                <form action="" id="signin" onsubmit="signin(event)">
+
+                    <div class="inputContainer">
+                        <h3>Username or email address</h3>
+                        <input type="text" id="userName" required>
+                    </div>
+                    <div class="inputContainer">
+                        <h3>Password
+                        </h3>
+                        <input type="text" id="Password" required>
+                    </div>
+                    <button class="green" type="submit" >Sign in</button>
+                </form>
+                <p class="or">or</p>
+                <button class="grey">Continue with google</button>
+                <p>New to GitHub? <a href="signup.html"><span> Create an account</span></a></p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+
+</html>

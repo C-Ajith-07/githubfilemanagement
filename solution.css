@@ -1,0 +1,217 @@
+
+
+body {
+    width: 100vw;
+    text-decoration: none;
+    background-color: #020402;
+    overflow-x: hidden;
+    /* cursor: url('images/icons8-cursor-64.png'), auto; */
+}
+
+
+
+
+
+header{
+    width: 100%;
+    margin-top: 3%;
+    background-image: url(images/merge-lines.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 0% 5% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>div{
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header>div>h1{
+    font-size: 4em;
+    line-height: 1em;
+}
+
+header>div>p{
+    margin-top: 1.5em;
+    font-size: 1.3em;
+}
+
+header>div>div{
+    margin-top: 1.5em;
+    width: 50%;
+    gap: 4%;
+}
+
+
+header>div>div>button{
+    width: 48%;
+    padding: 3% 0 3% 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+
+header>div>div>button:first-child{
+    background-color: white;
+    color: black;
+
+}
+
+header>div>div>button:last-child{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+
+section{
+    width: 100%;
+    padding-top: 4%;
+}
+
+.teams{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 65%;
+}
+
+.teams>h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.teams>div{
+    padding: 5% 0 5% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: appear-5 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear-5{
+    from{
+        opacity: 0;
+        scale: 0;
+        transform: translate(300px);
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        transform: translate(0px);
+    }
+}
+
+.teams>div>a{
+    width: 30%;
+}
+
+.teams>div>a>div{
+    width: 100%;
+    border: 1px solid rgb(39, 39, 39);
+    height: 350px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 8%;
+    background-color: #161B22;
+    transition: 2s;
+}
+
+.teams>div>a>div:hover , .teams>div>div:hover{
+    scale: 1.1;
+    transition: 2s;
+}
+
+
+
+.teams>div>div{
+    width: 30%;
+    border: 1px solid rgb(39, 39, 39);
+    height: 350px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 3%;
+    transition: 2s;
+    background-color: #161B22;
+}
+
+.teams>div>div h1{
+    font-size: 1.2em;
+}
+
+
+span {
+    color: rgb(138, 137, 139);
+}
+
+h3{
+    color: #79C0FF;
+}
+
+.menubar{
+    display: none;
+}
+
+@media screen and (max-width:425px) {
+    header{
+        margin-top: 70px;
+    }
+    header>h1{
+        font-size: 3em;    
+    }
+
+    header>div{
+        width: 90%;
+    }
+
+    header>div>div,.teams{
+        width: 80%;
+    }
+    .teams>div{
+        flex-wrap: wrap;
+        animation: none;
+        row-gap: 20px;
+    }
+
+    .teams>div>div {
+        height: 200px;
+    }
+
+
+.teams>div>a ,.teams>div>div {
+    width: 100%;
+}
+
+.teams>h1{
+    font-size: 2em;
+}
+
+header>div>h1{
+    font-size: 3em;
+}
+
+
+.teams>div>a>div{
+    height: 200px;
+}
+}
